@@ -29,15 +29,20 @@ body {
   padding: 15px;
   width: 90%;
   max-width: 700px;
-  background: #ffffff; /* Alterado para fundo totalmente branco */
+  background: rgba(255, 255, 255, 0.1); /* Um leve fundo transparente para ajudar no contraste */
 }
 
 .contador-perguntas {
   font-size: 34px;
   font-weight: 700;
-  color: var(--cor-secundaria); /* Cor alterada para azul escuro para contrastar com o branco */
-  margin-bottom: 8px;
-  /* text-shadow removido para manter o visual limpo no fundo branco */
+  color: var(--cor-neutra); /* Cor do texto alterada para escuro para contrastar com o fundo branco */
+  background-color: #ffffff; /* Adiciona o fundo branco */
+  padding: 5px 15px; /* Adiciona um espaço interno para não ficar colado no texto */
+  border-radius: 8px; /* Deixa as bordas arredondadas */
+  margin-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+  text-shadow: none; /* Remove a sombra do texto, pois o fundo já garante o contraste */
 }
 
 .texto-pergunta {
@@ -46,8 +51,11 @@ body {
   line-height: 1.3;
   margin-bottom: 24px;
   text-align: center;
-  color: var(--cor-neutra); /* Cor alterada para escuro */
-  /* text-shadow removido */
+  color: var(--cor-neutra); /* Cor do texto alterada para escuro */
+  background-color: #ffffff; /* Adiciona o fundo branco */
+  padding: 15px; /* Adiciona espaço interno para o texto não encostar nas bordas */
+  border-radius: 8px; /* Deixa as bordas arredondadas */
+  text-shadow: none; /* Remove a sombra do texto */
 }
 
 .lista-opcoes {
@@ -102,14 +110,17 @@ body {
 .tela-resultado {
   text-align: center;
   display: none;
+  background-color: #ffffff; /* Adiciona o fundo branco na tela final inteira */
+  padding: 30px; /* Dá um espaço interno generoso */
+  border-radius: 8px; /* Arredonda as bordas */
 }
 
 .pontuacao-resultado {
   font-size: 32px;
   font-weight: bold;
   margin: 16px 0;
-  color: var(--cor-secundaria); /* Cor alterada para escuro */
-  /* text-shadow removido */
+  color: var(--cor-principal); /* Muda a cor da pontuação para a cor laranja/vermelha do tema */
+  text-shadow: none; /* Remove a sombra, já que o fundo agora é branco */
 }
 
 .botao-reiniciar {
