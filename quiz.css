@@ -29,21 +29,37 @@ body {
   padding: 15px;
   width: 90%;
   max-width: 700px;
+  background: rgba(255, 255, 255, 0.1); /* Um leve fundo transparente para ajudar no contraste */
 }
 
 .contador-perguntas {
   font-size: 34px;
-  color: var(--cor-neutra);
+  font-weight: 700;
+  color: #ffffff; /* Cor branca para o texto */
   margin-bottom: 8px;
+  /* Cria uma borda grossa usando text-shadow */
+  text-shadow: 
+    -2px -2px 0 var(--cor-neutra),  
+     2px -2px 0 var(--cor-neutra),
+    -2px  2px 0 var(--cor-neutra),
+     2px  2px 0 var(--cor-neutra),
+     3px  3px 5px rgba(0,0,0,0.8);
 }
 
 .texto-pergunta {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
   margin-bottom: 24px;
   text-align: center;
-  color: var(--cor-secundaria);
+  color: #ffffff; /* Cor branca para o texto */
+  /* Cria uma borda escura visível para destacar no fundo */
+  text-shadow: 
+    -2px -2px 0 var(--cor-secundaria),  
+     2px -2px 0 var(--cor-secundaria),
+    -2px  2px 0 var(--cor-secundaria),
+     2px  2px 0 var(--cor-secundaria),
+     4px  4px 6px rgba(0,0,0,0.8);
 }
 
 .lista-opcoes {
@@ -58,12 +74,13 @@ body {
   text-align: left;
   padding: 16px;
   margin-bottom: 8px;
-  border: 1px solid var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
   border-radius: 8px;
   background: #fff;
   cursor: pointer;
   font-size: 20px;
   color: var(--cor-neutra);
+  font-weight: 600;
 }
 
 .botao-opcao:hover {
@@ -90,6 +107,8 @@ body {
   background: var(--cor-secundaria);
   color: #fff;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .tela-resultado {
@@ -99,8 +118,10 @@ body {
 
 .pontuacao-resultado {
   font-size: 32px;
+  font-weight: bold;
   margin: 16px 0;
-  color: var(--cor-principal);
+  color: #fff;
+  text-shadow: 2px 2px 0 var(--cor-principal), -2px -2px 0 var(--cor-principal), 2px -2px 0 var(--cor-principal), -2px 2px 0 var(--cor-principal);
 }
 
 .botao-reiniciar {
@@ -110,43 +131,11 @@ body {
   background: var(--cor-secundaria);
   color: #fff;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    font-family: 'Inter', sans-serif;
-}
-
-/* Retira as bordas padrão do fieldset e esconde as perguntas */
+/* Oculta o padrão, exibe apenas a pergunta ativa */
 .bloco-pergunta {
     display: none; 
     border: none;
@@ -154,13 +143,11 @@ body {
     margin: 0;
 }
 
-/* Quando a classe ativo entra em cena, a animação acontece */
 .bloco-pergunta.ativo {
     display: block;
     animation: fadeInSlide 0.4s ease-out forwards;
 }
 
-/* Animação de transição: surge do transparente para o opaco, deslizando 20px */
 @keyframes fadeInSlide {
     from { 
         opacity: 0; 
@@ -170,17 +157,4 @@ body {
         opacity: 1; 
         transform: translateX(0); 
     }
-}
-
-.botao-opcao {
-    margin-bottom: 12px;
-}
-
-.botao-proximo {
-    margin-top: 20px;
-}
-
-button {
-    padding: 10px 15px;
-    cursor: pointer;
 }
