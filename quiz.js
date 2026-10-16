@@ -18,7 +18,7 @@ const bancoDePerguntas = [
     { pergunta: "Qual império dominou a Síria e o Líbano por cerca de 400 anos até a 1ª Guerra Mundial?", opcoes: ["Império Romano", "Império Otomano", "Império Persa", "Império Britânico"], respostaCerta: "Império Otomano" },
     { pergunta: "A Síria abriga uma das cidades continuamente habitadas mais antigas do mundo. Qual é?", opcoes: ["Damasco", "Dubai", "Cairo", "Riad"], respostaCerta: "Damasco" },
     { pergunta: "Qual é o nome da famosa cadeia de montanhas que dá nome ao país Líbano?", opcoes: ["Cordilheira dos Andes", "Alpes", "Montanhas Rochosas", "Monte Líbano"], respostaCerta: "Monte Líbano" },
-    { pergunta: "Quais cores compõem a bandeira da Síria (que também inclui duas estrelas verdes)?", opcoes: ["Verde, branco e laranja", "Vermelho, branco e preto", "Azul, amarelo e verde", "Preto, branco e amarelo"], respostaCerta: "Vermelho, branco e preto" },
+    { pergunta: "Quais cores compõem a bandeira atual da Síria (que também inclui três estrelas vermelhas)?", opcoes: ["Vermelho, branco e preto", "Verde, branco e preto", "Azul, amarelo e verde", "Preto, branco e amarelo"], respostaCerta: "Verde, branco e preto" },
     { pergunta: "Qual cidade libanesa é famosa por suas imponentes ruínas romanas (Templo de Baco)?", opcoes: ["Baalbek", "Tiro", "Biblos", "Sídon"], respostaCerta: "Baalbek" },
     { pergunta: "Qual o nome da famosa sobremesa de massa folhada, nozes e mel muito popular nestes países?", opcoes: ["Cheesecake", "Baklava", "Tiramisu", "Pudim"], respostaCerta: "Baklava" }
 ];
